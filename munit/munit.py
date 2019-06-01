@@ -134,7 +134,7 @@ dataloader = DataLoader(
 )
 
 val_dataloader = DataLoader(
-    ImageDataset('data/CycleGAN/fashion/shoes2handbags/', transforms_=transforms_, mode='val'),
+    ImageDataset('data/CycleGAN/fashion/shoes2handbags/', transforms_=transforms_, mode='test'),
     batch_size=5,
     shuffle=True,
     num_workers=1,
